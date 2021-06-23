@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Score keeper</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+  </head>
+
+  <body>
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-half is-offset-one-quarter">
+            <div class="card">
+              <figure class="image is-4by3">
+                <img
+                  src="https://lh3.googleusercontent.com/proxy/WeIIco8p22vO3yH0aPGFQdwIkIA-4q6Bzx_37holxLAjajZ5Z2ziSvpho9qO-AMWLSqx_YelhG68tj1-kiNcbPQ3TGISo24-cjfR0C8GRfyAhVYtxm8n_5_OwqxTgA"
+                  alt=""
+                />
+              </figure>
+              <header class="card-header">
+                <p class="card-header-title">Ping Pong Score Keeper</p>
+              </header>
+              <div class="card-content">
+                <div class="content">
+                  <h1 class="title is-1">
+                    <span id="p1Display">0</span> to
+                    <span id="p2Display">0</span>
+                  </h1>
+                  <p class="subtitle">
+                    Track the score of your games by using the buttons below
+                  </p>
+                  <label class="label is-inline is-large" for="playTo"
+                    >Playing to:</label
+                  >
+                  <div class="select is-rounded">
+                    <select name="" id="playTo">
+                      <option value="3">3</option>
+                      <option value="5">5</option>
+                      <option value="7">7</option>
+                      <option value="9">9</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <footer class="card-footer">
+                <button
+                  class="button card-footer-item is-success is-large"
+                  id="p1Button"
+                >
+                  +1 for P1
+                </button>
+                <button
+                  class="button card-footer-item is-link is-large"
+                  id="p2Button"
+                >
+                  +1 for P2
+                </button>
+                <button
+                  class="button card-footer-item is-danger is-large"
+                  id="resetButton"
+                >
+                  Reset score
+                </button>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
